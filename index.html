@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Mobile UI</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <main class="app-shell" aria-label="Mobile app preview">
+      <section class="screen active" id="screen-videos" aria-labelledby="videos-title">
+        <header class="top-bar">
+          <div>
+            <p class="eyebrow">Videos</p>
+            <h1 id="videos-title">Home Feed</h1>
+          </div>
+          <button class="icon-button" aria-label="Open search">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m21 21-4.3-4.3m1.3-5.2a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z" />
+            </svg>
+          </button>
+        </header>
+
+        <div class="feed" aria-label="Uploaded videos">
+          <article class="video-card">
+            <video
+              controls
+              preload="metadata"
+              poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 540'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%23151b25'/%3E%3Cstop offset='1' stop-color='%2307090d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='960' height='540' fill='url(%23g)'/%3E%3Ccircle cx='480' cy='270' r='64' fill='%2336d6a5' fill-opacity='.16'/%3E%3Cpath d='M459 232v76l66-38z' fill='%2336d6a5'/%3E%3Ctext x='48' y='484' fill='%239aa4b5' font-family='Arial' font-size='32'%3ELate Night Studio Test%3C/text%3E%3C/svg%3E"
+              aria-label="Placeholder video player for Late Night Studio Test"
+            ></video>
+            <div class="video-copy">
+              <h2>Late Night Studio Test</h2>
+              <p>@user_1048</p>
+              <div class="metadata-space" aria-label="Reserved video metadata area"></div>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <video
+              controls
+              preload="metadata"
+              poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 540'%3E%3Crect width='960' height='540' fill='%2310141c'/%3E%3Cpath d='M0 398c150-80 274-82 420-24 154 61 314 26 540-98v264H0z' fill='%2336d6a5' fill-opacity='.12'/%3E%3Ccircle cx='480' cy='270' r='64' fill='%23f3f6fb' fill-opacity='.1'/%3E%3Cpath d='M459 232v76l66-38z' fill='%23f3f6fb'/%3E%3Ctext x='48' y='484' fill='%239aa4b5' font-family='Arial' font-size='32'%3EMorning Walk Clip%3C/text%3E%3C/svg%3E"
+              aria-label="Placeholder video player for Morning Walk Clip"
+            ></video>
+            <div class="video-copy">
+              <h2>Morning Walk Clip</h2>
+              <p>@creator_207</p>
+              <div class="metadata-space" aria-label="Reserved video metadata area"></div>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <video
+              controls
+              preload="metadata"
+              poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 540'%3E%3Crect width='960' height='540' fill='%2307090d'/%3E%3Crect x='80' y='76' width='800' height='388' rx='28' fill='%23151b25'/%3E%3Cpath d='M188 390h584' stroke='%2336d6a5' stroke-width='12' stroke-linecap='round' opacity='.36'/%3E%3Cpath d='M188 342h244' stroke='%23f3f6fb' stroke-width='12' stroke-linecap='round' opacity='.22'/%3E%3Ccircle cx='480' cy='242' r='64' fill='%2336d6a5' fill-opacity='.16'/%3E%3Cpath d='M459 204v76l66-38z' fill='%2336d6a5'/%3E%3Ctext x='48' y='508' fill='%239aa4b5' font-family='Arial' font-size='32'%3EEditing Room Preview%3C/text%3E%3C/svg%3E"
+              aria-label="Placeholder video player for Editing Room Preview"
+            ></video>
+            <div class="video-copy">
+              <h2>Editing Room Preview</h2>
+              <p>@sample_uploads</p>
+              <div class="metadata-space" aria-label="Reserved video metadata area"></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen" id="screen-upload" aria-labelledby="upload-title">
+        <header class="top-bar">
+          <div>
+            <p class="eyebrow">Create</p>
+            <h1 id="upload-title">Upload</h1>
+          </div>
+        </header>
+        <div class="placeholder-panel">
+          <svg class="icon large" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 16V7m0 0 4 4m-4-4-4 4" />
+            <path d="M20 16.5A4.5 4.5 0 0 0 15.5 12h-.6A6 6 0 1 0 5 17.5" />
+            <path d="M6 20h12" />
+          </svg>
+          <h2>Upload Video</h2>
+          <p>Placeholder upload flow for selecting, previewing, and preparing a new video.</p>
+          <button type="button">Choose file</button>
+        </div>
+      </section>
+
+      <section class="screen" id="screen-qa" aria-labelledby="qa-title">
+        <header class="top-bar">
+          <div>
+            <p class="eyebrow">Community</p>
+            <h1 id="qa-title">Q&A</h1>
+          </div>
+        </header>
+        <div class="list-stack">
+          <article class="qa-item">
+            <h2>How do I improve low-light video quality?</h2>
+            <p>3 answers - last updated today</p>
+          </article>
+          <article class="qa-item">
+            <h2>Best export settings for mobile uploads?</h2>
+            <p>8 answers - featured</p>
+          </article>
+          <article class="qa-item">
+            <h2>Can I save draft uploads?</h2>
+            <p>1 answer - product placeholder</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen" id="screen-messages" aria-labelledby="messages-title">
+        <header class="top-bar">
+          <div>
+            <p class="eyebrow">Inbox</p>
+            <h1 id="messages-title">Messages</h1>
+          </div>
+        </header>
+        <div class="list-stack">
+          <article class="message-item">
+            <div class="avatar">A</div>
+            <div>
+              <h2>@alex_media</h2>
+              <p>Nice upload. Want feedback on the final cut?</p>
+            </div>
+          </article>
+          <article class="message-item">
+            <div class="avatar">R</div>
+            <div>
+              <h2>@rileyqa</h2>
+              <p>Your question has a new placeholder answer.</p>
+            </div>
+          </article>
+          <article class="message-item">
+            <div class="avatar">S</div>
+            <div>
+              <h2>@studio_09</h2>
+              <p>Shared a sample workflow with you.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <nav class="bottom-nav" aria-label="Primary">
+        <button class="nav-item active" type="button" data-screen="videos" aria-current="page">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="3" />
+            <path d="m10 9 5 3-5 3z" />
+          </svg>
+          <span>Videos</span>
+        </button>
+        <button class="nav-item" type="button" data-screen="upload">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M12 8v8m-4-4h8" />
+          </svg>
+          <span>Upload</span>
+        </button>
+        <button class="nav-item" type="button" data-screen="qa">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 15.5 3.5 20 8 18.5h8a4 4 0 0 0 4-4V8a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v6.5a4 4 0 0 0 1 1Z" />
+            <path d="M8 9h8M8 13h5" />
+          </svg>
+          <span>Q&A</span>
+        </button>
+        <button class="nav-item" type="button" data-screen="messages">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 11.5a7.5 7.5 0 0 1-8 7.48 8.6 8.6 0 0 1-4.35 1.38 1 1 0 0 1-.84-1.55 6.6 6.6 0 0 0 .83-1.67A7.5 7.5 0 1 1 21 11.5Z" />
+            <path d="M8.5 11.5h7M8.5 14.5H13" />
+          </svg>
+          <span>Messages</span>
+        </button>
+      </nav>
+    </main>
+  </body>
+</html>
