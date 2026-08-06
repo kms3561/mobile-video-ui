@@ -21,7 +21,17 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-font"
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow this app to choose images and videos for upload."
+        }
+      ],
+      "expo-document-picker",
+      "expo-video",
+      "expo-audio",
+      "expo-asset"
     ]
   }
 }

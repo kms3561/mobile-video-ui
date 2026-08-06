@@ -1,4 +1,5 @@
 import { Ionicons } from '@expo/vector-icons';
+import type { ReactNode } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { colors, radii, spacing } from '../theme';
@@ -8,9 +9,11 @@ type PlaceholderPanelProps = {
   title: string;
   body: string;
   actionLabel?: string;
+  action?: ReactNode;
 };
 
 export function PlaceholderPanel({
+  action,
   actionLabel,
   body,
   icon,
@@ -21,6 +24,7 @@ export function PlaceholderPanel({
       <Ionicons color={colors.accent} name={icon} size={50} />
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.body}>{body}</Text>
+      {action}
       {actionLabel ? (
         <Pressable accessibilityRole="button" style={styles.action}>
           <Text style={styles.actionText}>{actionLabel}</Text>
